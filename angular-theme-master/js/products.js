@@ -52,7 +52,7 @@
 
   app.directive('productDescription', function(){
     return{
-      restrict: 'E',
+      restrict: 'E', /* A = atributes */
       templateUrl: 'product-description.html'
     };
   });

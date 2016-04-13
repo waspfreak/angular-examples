@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head ng-app>
+<html  ng-app>
+  <head>
     <meta charset="utf-8">
     <title>ng-model directive</title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
-    <script>
-      function Namecrtl($scope){
-        $scope.name ='John';
-        $scope.lastName = Smith:
-      };
-    </script>
   </head>
   <body>
-    <h1>Update a template when input text changes  </h1>
+    <h1>{{"Update a template when input text changes"}} </h1>
+
     Name: <input type="text" ng-model="name">
     Last name:<input type="text" ng-model="lastName">
 
-    <div class="">
+    <div>
           Hello: {{name}} {{lastName}}
     </div>
 
