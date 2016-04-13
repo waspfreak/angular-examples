@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit textarea</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <script>
+        function ClickToEditCrtl($scope) {
+          $scope.title = "Welcome to this demo!"
+        }
+    </script>
+  </head>
+  <body>
+<h1>Edit text example use <strong>ng-model</strong></h1>
+    <div ng-app>
+      <div ng-controller="ClickToEditCtrl">
+        <div ng-hide="editorEnabled">
+          {{title}}
+          <a href="#" ng-click="editorEnabled=!editorEnabled">Edit title</a>
+        </div>
+
+        <div ng-show="editorEnabled">
+          <input ng-model="title">
+          <a href="#" ng-click="editorEnabled=!editorEnabled">Done editing?</a>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

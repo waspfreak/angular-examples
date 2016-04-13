@@ -1,0 +1,80 @@
+@import url(bootstrap.min.css);
+/****************
+**COLORS
+*****************/
+.h1, h1 {
+  font-size: 39px; }
+
+/****************
+**HEADER
+*****************/
+.header {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  overflow: hidden;
+  width: 100%; }
+  .header__logo {
+    padding: 0; }
+    .header__logo img {
+      max-width: 200px; }
+
+a.header__btn-mobile.btn {
+  padding: 0;
+  font-size: 2em; }
+
+/****************
+**PRODUCT
+*****************/
+.product__name {
+  color: #666;
+  text-align: center;
+  font-weight: 200; }
+.product__gallery.img-wrap {
+  text-align: center; }
+.product__price {
+  display: block;
+  font-size: 2em;
+  text-align: center; }
+.product__btn {
+  border-radius: 0;
+  margin-bottom: 20px; }
+
+/****************
+**FOOTER
+*****************/
+.footer {
+  border-top: 1px solid #ccc;
+  padding: 1rem; }
+
+/****************
+**FORM VALIDATIONS USE ANGULAR CLASS
+*****************/
+.ng-dirty.ng-valid {
+  border-color: #001eff; }
+.ng-dirty.ng-invalid {
+  border-color: #333333; }
+
+/****************
+**BTN
+*****************/
+.btn {
+  border-radius: 0; }
+
+.img-wrap img {
+  width: 300px; }
+
+.thumbnail > img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50px; }
+
+@media screen and (max-width: 789px) {
+  .header {
+    background: #fff;
+    position: fixed;
+    z-index: 999; }
+
+  .product {
+    margin-top: 85px; } }
+
+/*# sourceMappingURL=main.css.map */
