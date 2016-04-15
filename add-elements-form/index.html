@@ -4,18 +4,22 @@
     <meta charset="utf-8">
     <title>Adding entries to a list using forms and ng-submit</title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+
     <script>
-      var nameApp = angular.module('nameApp', []);
+    var nameApp = angular.module('nameApp', []);
       nameApp.controller('NameCtrl', function ($scope){
+
         $scope.names = ['Larry', 'Curly', 'Moe'];
+
         $scope.addName = function() {
           $scope.names.push($scope.enteredName);
         };
       });
     </script>
   </head>
+
   <body ng-controller="NameCtrl">
-    <h1>Adding entries to a list using forms and ng-submit</h1>
+    <h1>Adding entries to a list using forms and ng-submit directive and $scope</h1>
     <ul>
       <li ng-repeat="name in names">{{name}}</li>
     </ul>
@@ -23,5 +27,13 @@
       <input type="text" ng-model="enteredName">
       <input type="submit" value="add">
     </form>
+
+  <p>
+  The scope is the binding part between the HTML (view) and the JavaScript (controller).
+</p>
+
+
   </body>
+
+
 </html>
